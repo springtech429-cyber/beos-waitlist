@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* ═══════════════════════════════════════════════════════════
+   🏷️  BRAND COLORS — Update these CSS variables to match your brand.
+   Replace the hex values below with your brand's primary color,
+   lighter variant, and glow color. All components inherit from these.
+   ═══════════════════════════════════════════════════════════ */
+:root {
+  --bg-primary: #0a0a0f;       /* 🏷️ Main background */
+  --bg-secondary: #12121a;     /* 🏷️ Card/section backgrounds */
+  --bg-card: #1a1a28;          /* 🏷️ Card backgrounds */
+  --bg-card-hover: #222236;    /* 🏷️ Card hover state */
+  --accent: #6c5ce7;           /* 🏷️ BRAND PRIMARY COLOR — change this */
+  --accent-light: #a29bfe;     /* 🏷️ BRAND LIGHT COLOR — lighter variant */
+  --accent-glow: rgba(108, 92, 231, 0.3); /* 🏷️ BRAND GLOW — same hue with alpha */
+  --text-primary: #f0f0f5;     /* 🏷️ Main text */
+  --text-secondary: #9898b0;   /* 🏷️ Secondary text */
+  --text-muted: #606078;       /* 🏷️ Muted text */
+  --border: rgba(255, 255, 255, 0.06);       /* 🏷️ Subtle borders */
+  --border-accent: rgba(108, 92, 231, 0.3);  /* 🏷️ Accent borders */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+::selection {
+  background: var(--accent);
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-card);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}

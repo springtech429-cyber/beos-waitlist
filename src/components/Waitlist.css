@@ -1,0 +1,125 @@
+.waitlist-section {
+  padding: 80px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.waitlist-section--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.waitlist-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.waitlist-left {
+  padding-right: 20px;
+}
+
+.waitlist-description {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 36px;
+}
+
+.waitlist-perks {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.waitlist-perk {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.waitlist-perk-icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(108, 92, 231, 0.1);
+  border-radius: 10px;
+  color: var(--accent-light);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.waitlist-perk div {
+  display: flex;
+  flex-direction: column;
+}
+
+.waitlist-perk strong {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.waitlist-perk span {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+/* Form container */
+.waitlist-right {
+  position: relative;
+}
+
+.waitlist-form-container {
+  position: relative;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-accent);
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 4px;
+}
+
+.waitlist-form-glow {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 50% 50%, rgba(108, 92, 231, 0.08), transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.waitlist-iframe {
+  position: relative;
+  z-index: 1;
+  border-radius: 16px;
+  min-height: 500px;
+}
+
+@media (max-width: 768px) {
+  .waitlist-inner {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  
+  .waitlist-left {
+    padding-right: 0;
+    text-align: center;
+  }
+  
+  .waitlist-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .waitlist-perk {
+    text-align: left;
+  }
+}
