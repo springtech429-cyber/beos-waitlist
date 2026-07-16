@@ -25,3 +25,4 @@ See `src/assets/README.md` for logo placement instructions.
 ## Tally → Mailchimp Integration
 
 See `MAKE-INTEGRATION.md` for the full setup guide.
+# beos-waitlist
