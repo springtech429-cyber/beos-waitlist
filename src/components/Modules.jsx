@@ -45,7 +45,7 @@ export default function Modules() {
   ]
 
   return (
-    <section className="section modules-section">
+    <section  id='modules' className="section modules-section">
       <div className="modules-header">
         <span className="section-label">Who It Serves</span>
         <h2 className="section-title">Every Participant in the Built Environment</h2>

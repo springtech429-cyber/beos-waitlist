@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react'
 import './Hero.css'
+import logo from '../assets/logo.png'
 
 /* ═══════════════════════════════════════════════════════════
    🏷️  BRAND LOGO — Replace the placeholder below with your logo.
@@ -83,6 +84,10 @@ export default function Hero() {
     document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })
   }
 
+   const scrollToModules = () => {
+    document.getElementById('modules')?.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <section className="hero">
       <canvas ref={canvasRef} className="hero-canvas" />
@@ -90,8 +95,8 @@ export default function Hero() {
       {/* 🏷️ BRAND LOGO — Top-left navbar. Replace the <span> with your <img>. */}
       <nav className="hero-nav">
         <div className="hero-nav-logo">
-          {/* REPLACE: <img src={logo} alt="BEOS" className="hero-logo-img" /> */}
-          <span className="hero-logo-placeholder">◈ BEOS</span>
+          { <img src={logo} alt="REALTR" className="hero-logo-img" /> }
+         
         </div>
         <button className="hero-nav-cta" onClick={scrollToWaitlist}>
           Join Waitlist
@@ -106,8 +111,8 @@ export default function Hero() {
 
         {/* 🏷️ BRAND LOGO — Large hero logo above the headline. Remove or replace. */}
         <div className="hero-brand-logo">
-          {/* REPLACE: <img src={logo} alt="BEOS" className="hero-brand-logo-img" /> */}
-          <span className="hero-brand-logo-placeholder">◈</span>
+          { <img src={logo} alt="REALTR" className="hero-brand-logo-img" /> }
+        
         </div>
 
         <h1 className="hero-title">
@@ -126,7 +131,7 @@ export default function Hero() {
               <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </button>
-          <button className="hero-cta-secondary" onClick={scrollToWaitlist}>
+          <button className="hero-cta-secondary" onClick={scrollToModules}>
             Learn more
           </button>
         </div>

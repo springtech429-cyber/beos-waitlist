@@ -3,6 +3,7 @@
    Replace the <span> placeholder with your <img>.
    ═══════════════════════════════════════════════════════════ */
 import './Footer.css'
+import logo from '../assets/logo.png'
 
 export default function Footer() {
   return (
@@ -11,8 +12,8 @@ export default function Footer() {
         <div className="footer-brand">
           <div className="footer-logo">
             {/* 🏷️ BRAND LOGO — Replace with: <img src={logo} alt="BEOS" className="footer-logo-img" /> */}
-            <span className="footer-logo-icon">◈</span>
-            <span className="footer-logo-text">BEOS</span>
+            <img src={logo} alt="BEOS" className="footer-logo-img h-60px"  />
+            <span className="footer-logo-text">REALTR</span>
           </div>
           <p className="footer-tagline">
             The global operating system for the built environment.
