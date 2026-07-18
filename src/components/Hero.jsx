@@ -135,7 +135,7 @@ export default function Hero() {
             Learn more
           </button>
         </div>
-        <div className="hero-stats">
+        /*<div className="hero-stats">
           <div className="hero-stat">
             <span className="hero-stat-number">10M+</span>
             <span className="hero-stat-label">Architecture professionals globally</span>
@@ -151,7 +151,7 @@ export default function Hero() {
             <span className="hero-stat-label">Projected annual revenue at scale</span>
           </div>
         </div>
-      </div>
+      </div>*/
       <div className="hero-scroll-indicator" onClick={scrollToWaitlist}>
         <div className="hero-scroll-mouse">
           <div className="hero-scroll-wheel" />
